@@ -42,11 +42,3 @@ main(){
 	sonOfShopKeeper c;
 	c.person();
 }
-
-
-
-
-
-
-
-
