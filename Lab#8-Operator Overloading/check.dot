@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+class vectors
+{
+private:
+	double	i, j, k;
+public:
+	vectors():i(0),j(0), k(0){}
+	vectors(double r, double s, double t):i(r), j(s), k(t){}
+	void show()
+	{	
+	cout<<i<<","<<j<<","<<k<<endl;
+	} 
+
+	float operator * (vectors rhs)
+	{
+		vectors temp;
+		temp.i=i * rhs.i;
+		temp.j=j * rhs.j;
+		temp.k=k * rhs.k;
+		return temp.i+temp.j+temp.k;
+	}
+};
+
+main()
+{
+	vectors	c1(3, 4.3), c2(2, 4);
+	c1.show();
+	c2.show();
+	float c3;
+	c3=c1* c2;	     //Invocation of "+" Operator -- direct
+//or
+//c3=c1.operator+ (c2);  //Invocation of "+" Operator -- Function
+	cout<<c3;
+}
+
