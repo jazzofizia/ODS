@@ -1,0 +1,11 @@
+//unity installation and running first script
+
+unity 2017f. personal standalone package
+Monodeveloper installation
+google android SDK (.apk)
+the asset store and pricing
+interface and gameobject
+scripting and physics
+controller and soft buttons
+building package and optimization
+display platform and earning
