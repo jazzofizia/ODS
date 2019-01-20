@@ -1,4 +1,4 @@
-// CPP Program to illustrate early binding. 
+// CPP Program to illustrate early and binding. 
 // Any normal function call (without virtual) 
 // is binded early. Here we have taken base 
 // and derived class example so that readers 
