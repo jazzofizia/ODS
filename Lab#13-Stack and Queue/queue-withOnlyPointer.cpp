@@ -20,12 +20,12 @@ void pop(int *Receiver){
 		cout<<"Empty Queue";
 }
 main(){
-	static int stack;
-	push(5, &stack);
-	push(10, &stack);
-	push(15, &stack);
-	pop(&stack);
-	pop(&stack);
-	pop(&stack);
-	pop(&stack);
+	static int q;
+	push(5, &q);
+	push(10, &q);
+	push(15, &q);
+	pop(&q);
+	pop(&q);
+	pop(&q);
+	pop(&q);
 }
