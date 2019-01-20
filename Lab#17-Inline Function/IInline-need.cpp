@@ -4,13 +4,13 @@
 using namespace std;
 
 // assign a value to each element of a vector
-void assign(int& v)
+void assign(int& v)   //inline void assign(int& v)
 {
   static int n = 1; v = n++;
 }
 
 // print out each element
-void print(int v)
+ void print(int v)  //inline void print(int v)
 {
   cout << v << " ";
 }
@@ -18,7 +18,8 @@ void print(int v)
 int main()
 {
 	//with each iteration, a fucntionis called which makes the program jumpy and vibratory. (takes less memory)
-	// - Output Size: 1.8488130569458 MiB
+	// simple memory: Output Size: 1.8488130569458 MiB (0.01s less)
+	//inline memory: Output Size: 1.84916877746582 MiB (+300bits more)
   vector<int> vec(10);
   // output initial value of each element
   for_each(vec.begin(), vec.end(), print); //the function print takes value from first to last of vector vec (algorthm package usage)
