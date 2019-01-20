@@ -6,6 +6,9 @@ using namespace std;
 //array, object, structure, vector, sets are not premitive. **Java** and C# doesn't support global premitive DT
 //dectype(fromvar) ToVar = declarationValue; is same as
 //auto ToVar = Declarationvalue; 
+
+//The below function does't work in C++17 and below because for this purpose, templates are used and
+//Function inputs are mandatory to be declared as per function types. (known input, no input, known output, no output).
 /*void size(auto x){ //command to run on g++ -std=c++11 as 
 	cout<<sizeof(x)<<":"<<typeid(x).name()<<endl;
 }*/
@@ -22,5 +25,4 @@ int main()
 	double d = 10.2	;			//64-bit
 	long double ld = 1000.233; //80-bits	
 }
-
 
